@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane Brennan | Software Engineer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            400: '#818cf8', // Indigo 400
+                            500: '#6366f1', // Indigo 500
+                            600: '#4f46e5', // Indigo 600
+                        },
+                        dark: {
+                            bg: '#0f172a', // Slate 900
+                            surface: '#1e293b', // Slate 800
+                            border: '#334155', // Slate 700
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-dark-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-mono font-bold text-xl tracking-tighter text-brand-400">
+                    SB_
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#projects" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#experience" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button placeholder -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="ph ph-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 lg:pb-24 lg:pt-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Hero -->
+            <section id="about" class="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-sm font-mono">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                        </span>
+                        <span>Bellevue, WA</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white">
+                        Shane Brennan
+                    </h1>
+                    <h2 class="text-2xl lg:text-3xl text-slate-400 font-medium">
+                        Backend Software Engineer
+                    </h2>
+                    <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                        Results-driven engineer specializing in building robust, high-performance APIs and data management systems. Proven track record in C#, Python, and Java, combining strong technical execution with operational insight.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-brand-500/25">
+                            <i class="ph ph-code text-xl"></i> View Projects
+                        </a>
+                        <a href="https://github.com/Smb7" target="_blank" class="inline-flex items-center gap-2 bg-dark-surface hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-medium transition border border-dark-border">
+                            <i class="ph ph-github-logo text-xl"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/shane-brennan-washington/" target="_blank" class="inline-flex items-center gap-2 bg-dark-surface hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-medium transition border border-dark-border">
+                            <i class="ph ph-linkedin-logo text-xl"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <!-- Optional: Add a stylized avatar or graphic here -->
+                <div class="hidden lg:block w-80 h-80 relative">
+                     <div class="absolute inset-0 bg-gradient-to-tr from-brand-600 to-purple-600 rounded-full blur-3xl opacity-20"></div>
+                     <div class="w-full h-full glass-card rounded-2xl flex items-center justify-center transform rotate-3">
+                         <i class="ph ph-terminal-window text-9xl text-slate-500/50"></i>
+                     </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="mb-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <h2 class="text-3xl font-bold">Featured Projects</h2>
+                    <div class="h-px bg-dark-border flex-1"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Project 1: Python -->
+                    <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-3 bg-yellow-500/10 text-yellow-400 rounded-lg">
+                                    <i class="ph ph-python-logo text-2xl"></i>
+                                </div>
+                                <a href="https://github.com/Smb7/Player-Stats-Aggregator" target="_blank" class="text-slate-400 hover:text-white transition"><i class="ph ph-github-logo text-2xl"></i></a>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Player Stats Aggregator</h3>
+                            <p class="text-slate-400 text-sm mb-4 flex-1">
+                                An asynchronous REST API built with FastAPI that concurrently fetches and standardizes user profile data from multiple mocked gaming platforms (Steam, Xbox Live).
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">FastAPI</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Python 3</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Asyncio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Java -->
+                    <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-3 bg-red-500/10 text-red-400 rounded-lg">
+                                    <i class="ph ph-coffee text-2xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Guild Management API</h3>
+                            <p class="text-slate-400 text-sm mb-4 flex-1">
+                                A backend service for MMO guild management. Features complete CRUD operations for rosters and event scheduling, demonstrating complex entity relationships using JPA.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="px-2 py-1 bg-brand-500/10 border border-brand-500/20 rounded text-xs font-mono text-brand-400">In Development</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Spring Boot</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Java</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: C# -->
+                    <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-3 bg-purple-500/10 text-purple-400 rounded-lg">
+                                    <i class="ph ph-file-c-sharp text-2xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Game Asset Redirector</h3>
+                            <p class="text-slate-400 text-sm mb-4 flex-1">
+                                A high-performance URL mapping service for distributing game mod files. Built with Minimal APIs to handle rapid HTTP routing and status code manipulation.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="px-2 py-1 bg-brand-500/10 border border-brand-500/20 rounded text-xs font-mono text-brand-400">In Development</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">ASP.NET Core</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">C#</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills & Experience -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <!-- Skills Column -->
+                <div class="lg:col-span-1 space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-wrench text-brand-400"></i> Technical Skills</h3>
+                        <div class="glass-card p-5 rounded-xl space-y-4">
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Languages</h4>
+                                <p class="text-slate-400 text-sm">C#, Java, Python, JavaScript, TypeScript, SQL, HTML5/CSS3, PowerShell, Bash</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Backend Frameworks</h4>
+                                <p class="text-slate-400 text-sm">.NET (ASP.NET Core, MVC), Spring Boot, Node.js (Express), Django, Flask, FastAPI, Entity Framework (ORM)</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Frontend & Architecture</h4>
+                                <p class="text-slate-400 text-sm">Angular, RESTful APIs, GraphQL, Model-View-Controller (MVC), Domain-Driven Design (DDD)</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Databases & Data Management</h4>
+                                <p class="text-slate-400 text-sm">SQL Server, PostgreSQL, MySQL, NoSQL, Redis</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Cloud, DevOps & Automation</h4>
+                                <p class="text-slate-400 text-sm">Azure, Azure DevOps, Docker, GitHub Actions (CI/CD), Git, Grafana, n8n</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Testing</h4>
+                                <p class="text-slate-400 text-sm">Test-Driven Development (TDD), Unit & Integration Testing (xUnit, JUnit, pytest)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-graduation-cap text-brand-400"></i> Education</h3>
+                        <div class="glass-card p-5 rounded-xl space-y-4">
+                            <div>
+                                <h4 class="font-bold text-white">M.S. of Software Engineering - Domain Driven Design</h4>
+                                <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
+                                <p class="text-brand-400 text-xs font-mono">2027</p>
+                            </div>
+                            <div class="border-t border-dark-border/50"></div>
+                            <div>
+                                <h4 class="font-bold text-white">B.S. of Software Engineering</h4>
+                                <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
+                                <p class="text-brand-400 text-xs font-mono">2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-seal-check text-brand-400"></i> Certifications</h3>
+                        <div class="glass-card p-5 rounded-xl space-y-4">
+                            <div>
+                                <h4 class="font-bold text-white">Backend Software Development</h4>
+                                <p class="text-slate-400 text-sm mb-1">Nucamp</p>
+                                <p class="text-brand-400 text-xs font-mono">September 2022</p>
+                            </div>
+                            <div class="border-t border-dark-border/50"></div>
+                            <div>
+                                <h4 class="font-bold text-white">ITIL Foundation in IT Service Management</h4>
+                                <p class="text-slate-400 text-sm mb-1">PeopleCert</p>
+                                <p class="text-brand-400 text-xs font-mono">December 2025</p>
+                            </div>
+                            <div class="border-t border-dark-border/50"></div>
+                            <div>
+                                <h4 class="font-bold text-white">Front-End Developer</h4>
+                                <p class="text-slate-400 text-sm mb-1">WGU</p>
+                                <p class="text-brand-400 text-xs font-mono">December 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Column -->
+                <div class="lg:col-span-2" id="experience">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="ph ph-briefcase text-brand-400"></i> Professional Experience</h3>
+                    
+                    <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-dark-border before:to-transparent">
+                        
+                        <!-- Job 1: Software Engineer -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 group-[.is-active]:text-brand-400 group-[.is-active]:border-brand-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                <i class="ph ph-code"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl border border-brand-500/30">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                    <h4 class="font-bold text-white text-lg">Software Engineer</h4>
+                                    <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2 py-1 rounded">Bellevue Club | Hotel</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">May 2024 – Current</p>
+                                <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                                    <li>Architected and developed a guest book web application using C# and ASP.NET MVC REST architecture; managed the SQL Server database, created views, and integrated with frontend, resulting in an 10% increase in revenue and 30% increase in billing accuracy.</li>
+                                    <li>Engineered a Python REST API to monitor uptime, status, and volume of Sonos devices property-wide, building a custom Grafana dashboard with alerting that achieved a 20% increase in device uptime and 40% reduction in support tickets.</li>
+                                    <li>Developed a C# WinForms application deployed to Point of Sale (POS) window machines to provide technicians with instant diagnostic data, decreasing technical resolution times by 10%.</li>
+                                    <li>Created a Python CLI for network engineers to automate commands for Juniper switches and developed an API to integrate switch alarms with Grafana, reducing troubleshooting time by 20% and achieving 99% network uptime.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Job 2: Starbucks -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                <i class="ph ph-coffee"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                    <h4 class="font-bold text-white text-lg">IT Service Desk Analyst</h4>
+                                    <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">Starbucks</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">December 2023 – May 2024</p>
+                                <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                                    <li>Engineered Python scripts to automate manual documentation workflows, significantly reducing administrative overhead and improving the efficiency of the IT Service Desk.</li>
+                                    <li>Provided Tier 1-2 network and systems support for retail locations, diagnosing complex connectivity issues and executing remote server reboots to restore Point of Sale (POS) operations.</li>
+                                    <li>Authored comprehensive Knowledge Base Articles (KBAs) and technical documentation, standardizing troubleshooting procedures for software faults and critical network outages.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Job 3: Boeing -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                <i class="ph ph-buildings"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                    <h4 class="font-bold text-white text-lg">IT Support II - Site Lead</h4>
+                                    <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">Boeing</span>
+                                 </div>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">June 2023 – December 2023</p>
+                                <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                                    <li>Spearheaded the launch of a new remote support division, establishing workflows and providing specialized Tier 2 VPN network troubleshooting for enterprise users.</li>
+                                    <li>Directed enterprise-wide staging and deployment operations across the Renton campus, overseeing the end-to-end hardware provisioning and systems configuration lifecycle.</li>
+                                    <li>Executed complex, large-scale data migrations and remote system administration, ensuring secure data transfers and minimal downtime during hardware transitions.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Job 4: AT&T -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                <i class="ph ph-phone"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                    <h4 class="font-bold text-white text-lg">IT Support</h4>
+                                    <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">AT&T</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">June 2022 – June 2023</p>
+                                <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                                    <li>Provided on-site technical support for retail customers, diagnosing and resolving complex mobile networking, Wi-Fi, and cellular data connectivity issues across diverse hardware platforms.</li>
+                                    <li>Conducted hands-on hardware and OS troubleshooting, translating technical diagnostics into clear, actionable solutions for end-users.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-dark-border bg-dark-surface mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 Shane Brennan. Built with HTML, Tailwind CSS, and Phosphor Icons.
+            </p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="https://github.com/Smb7" class="text-slate-500 hover:text-white transition">
+                    <span class="sr-only">GitHub</span>
+                    <i class="ph ph-github-logo text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shane-brennan-washington/" class="text-slate-500 hover:text-white transition">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="ph ph-linkedin-logo text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
