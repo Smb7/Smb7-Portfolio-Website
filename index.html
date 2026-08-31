@@ -16,61 +16,112 @@
                 extend: {
                     colors: {
                         brand: {
-                            400: '#818cf8', // Indigo 400
-                            500: '#6366f1', // Indigo 500
-                            600: '#4f46e5', // Indigo 600
+                            400: '#e8bc5c',
+                            500: '#d4a84b',
+                            600: '#b8862e',
+                        },
+                        teal: {
+                            400: '#7eb6c9',
+                            500: '#3d7a8c',
                         },
                         dark: {
-                            bg: '#0f172a', // Slate 900
-                            surface: '#1e293b', // Slate 800
-                            border: '#334155', // Slate 700
+                            bg: '#071018',
+                            surface: '#122433',
+                            border: '#2a4a5a',
                         }
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        mono: ['Fira Code', 'monospace'],
+                        sans: ['"Source Sans 3"', 'sans-serif'],
+                        serif: ['Fraunces', 'serif'],
+                        mono: ['"Spline Sans Mono"', 'monospace'],
                     }
                 }
             }
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap');
         
         body {
-            background-color: #0f172a;
-            color: #f8fafc;
+            background-color: #071018;
+            color: #e8eef2;
         }
 
-        /* Custom Scrollbar */
+        h1, h2, h3, h4.font-bold {
+            font-family: Fraunces, serif;
+            font-optical-sizing: auto;
+        }
+
+        .nav-cursor {
+            display: inline-block;
+            animation: cursor-blink 1.15s steps(1, end) infinite;
+        }
+
+        @keyframes cursor-blink {
+            0%, 45% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+
+        .bg-photo {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background-image: url('Photos/downtownBellevue.jpeg');
+            background-size: cover;
+            background-position: center 35%;
+            background-repeat: no-repeat;
+        }
+
+        .bg-photo::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(180deg, rgba(7, 16, 24, 0.32) 0%, rgba(7, 16, 24, 0.48) 32%, rgba(7, 16, 24, 0.74) 68%, rgba(7, 16, 24, 0.88) 100%),
+                radial-gradient(ellipse at 70% 40%, rgba(212, 168, 75, 0.12) 0%, transparent 55%);
+        }
+
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #0f172a;
+            background: #071018;
         }
         ::-webkit-scrollbar-thumb {
-            background: #334155;
+            background: #2a4a5a;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #475569;
+            background: #d4a84b;
         }
 
         .glass-card {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(51, 65, 85, 0.5);
+            background: rgba(10, 24, 36, 0.52);
+            backdrop-filter: blur(18px) saturate(140%);
+            -webkit-backdrop-filter: blur(18px) saturate(140%);
+            border: 1px solid rgba(126, 182, 201, 0.2);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(232, 188, 92, 0.35);
+        }
+
+        #about h1,
+        #about h2,
+        #about p {
+            text-shadow: 0 2px 18px rgba(7, 16, 24, 0.85);
         }
     </style>
 </head>
-<body class="antialiased selection:bg-brand-500 selection:text-white">
+<body class="antialiased font-sans selection:bg-brand-500 selection:text-dark-bg">
 
-    <nav class="fixed w-full z-50 glass-card border-b border-dark-border">
+    <div class="bg-photo" aria-hidden="true"></div>
+
+    <nav class="fixed w-full z-50 glass-card border-b border-dark-border/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 font-mono font-bold text-xl tracking-tighter text-brand-400">
-                    SMB7_
+                    SMB7<span class="nav-cursor">_</span>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -83,7 +134,7 @@
         </div>
     </nav>
 
-    <main class="pt-24 pb-16 lg:pb-24 lg:pt-32">
+    <main class="relative z-10 pt-24 pb-16 lg:pb-24 lg:pt-32">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Hero -->
@@ -99,33 +150,26 @@
                     <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white">
                         Shane Brennan
                     </h1>
-                    <h2 class="text-2xl lg:text-3xl text-slate-400 font-medium">
+                    <h2 class="text-2xl lg:text-3xl text-teal-400 font-medium">
                         Software Engineer
                     </h2>
                     <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
                         Software Engineer with hands-on experience developing full-stack web applications, REST APIs, and automated infrastructure tooling across enterprise, retail, and hospitality environments. Proficient in C#, .NET, Python, Angular, and SQL Server, with a background in systems engineering, CI/CD pipelines, and network diagnostics.
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
-                        <a href="#projects" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-brand-500/25">
+                        <a href="#projects" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-400 text-dark-bg px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-brand-500/30">
                             <i class="ph ph-code text-xl"></i> View Projects
                         </a>
-                        <a href="https://github.com/Smb7" target="_blank" class="inline-flex items-center gap-2 bg-dark-surface hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-medium transition border border-dark-border">
+                        <a href="https://github.com/Smb7" target="_blank" class="inline-flex items-center gap-2 glass-card hover:border-brand-400/50 text-white px-6 py-3 rounded-lg font-medium transition">
                             <i class="ph ph-github-logo text-xl"></i> GitHub
                         </a>
-                        <a href="https://www.linkedin.com/in/shane-brennan-washington/" target="_blank" class="inline-flex items-center gap-2 bg-dark-surface hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-medium transition border border-dark-border">
+                        <a href="https://www.linkedin.com/in/shane-brennan-washington/" target="_blank" class="inline-flex items-center gap-2 glass-card hover:border-brand-400/50 text-white px-6 py-3 rounded-lg font-medium transition">
                             <i class="ph ph-linkedin-logo text-xl"></i> LinkedIn
                         </a>
-                        <a href="mailto:Shane.m.brenn@gmail.com" class="inline-flex items-center gap-2 bg-dark-surface hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-medium transition border border-dark-border">
+                        <a href="mailto:Shane.m.brenn@gmail.com" class="inline-flex items-center gap-2 glass-card hover:border-brand-400/50 text-white px-6 py-3 rounded-lg font-medium transition">
                             <i class="ph ph-envelope text-xl"></i> Email
                         </a>
                     </div>
-                </div>
-                <!-- Optional: Add a stylized avatar or graphic here -->
-                <div class="hidden lg:block w-80 h-80 relative">
-                     <div class="absolute inset-0 bg-gradient-to-tr from-brand-600 to-purple-600 rounded-full blur-3xl opacity-20"></div>
-                     <div class="w-full h-full glass-card rounded-2xl flex items-center justify-center transform rotate-3">
-                         <i class="ph ph-terminal-window text-9xl text-slate-500/50"></i>
-                     </div>
                 </div>
             </section>
 
@@ -166,7 +210,7 @@
                     <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
                         <div class="p-6 flex-1 flex flex-col">
                             <div class="flex justify-between items-start h-14 mb-4">
-                                <div class="p-3 bg-blue-500/10 text-blue-400 rounded-lg">
+                                <div class="p-3 bg-teal-500/20 text-teal-400 rounded-lg">
                                     <i class="ph ph-timer text-2xl"></i>
                                 </div>
                                 <a href="https://github.com/Smb7/Productivity-Tracker" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" aria-label="View Source on GitHub">
@@ -189,7 +233,7 @@
                     <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
                         <div class="p-6 flex-1 flex flex-col">
                             <div class="flex justify-between items-start h-14 mb-4">
-                                <div class="p-3 bg-yellow-500/10 text-yellow-400 rounded-lg">
+                                <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg">
                                     <i class="ph ph-python-logo text-2xl"></i>
                                 </div>
                                 <a href="https://github.com/Smb7/Player-Stats-Aggregator" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition" aria-label="View Source on GitHub">
@@ -399,7 +443,7 @@
         </div>
     </main>
 
-    <footer class="border-t border-dark-border bg-dark-surface mt-12 py-8">
+    <footer class="relative z-10 border-t border-dark-border/60 glass-card mt-12 py-8 rounded-none">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
             <p class="text-slate-500 text-sm">
                 &copy; 2026 Shane Brennan. Built with HTML, Tailwind CSS, and Phosphor Icons.
