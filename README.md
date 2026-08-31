@@ -11,7 +11,7 @@ A responsive, dark-themed personal portfolio website built to showcase my profes
 *   **Modern UI/UX:** Built with a custom dark theme using Tailwind CSS, featuring glassmorphism card effects, smooth scrolling, and custom scrollbars.
 *   **Professional Timeline:** Detailed work history outlining roles and responsibilities at companies like SquidSec, Boeing, and Starbucks.
 *   **Project Showcase:** Dedicated sections for full-stack featured projects, including:
-    *   **SquidSupport:** A secure support ticketing platform (React, FastAPI, PostgreSQL).
+    *   **SufferTracker:** A production job tracker (.NET 8, Angular, PostgreSQL, Docker).
     *   **Productivity Tracker:** A containerized daily activity logger (Angular, Spring Boot, Docker).
     *   **Player Stats Aggregator:** An asynchronous backend service (FastAPI, Python).
 
