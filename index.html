@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shane Brennan | Software Engineer</title>
+    <title>Shane Brennan | Automation · Systems · Infrastructure Engineer</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Phosphor Icons -->
@@ -126,7 +126,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#about" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#projects" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#work" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Work</a>
                         <a href="#experience" class="text-slate-300 hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Experience</a>
                     </div>
                 </div>
@@ -145,20 +145,20 @@
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
                         </span>
-                        <span>Bellevue, WA</span>
+                        <span>Covington, WA</span>
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white">
                         Shane Brennan
                     </h1>
                     <h2 class="text-2xl lg:text-3xl text-teal-400 font-medium">
-                        Software Engineer
+                        Automation Engineer · Systems Engineer · Infrastructure Engineer
                     </h2>
                     <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
-                        Software Engineer with hands-on experience developing full-stack web applications, REST APIs, and automated infrastructure tooling across enterprise, retail, and hospitality environments. Proficient in C#, .NET, Python, Angular, and SQL Server, with a background in systems engineering, CI/CD pipelines, and network diagnostics.
+                        Infrastructure specialist who automates network, identity, voice, and monitoring work instead of ticket-driving it. Python and PowerShell tooling against Juniper, Palo Alto, Active Directory, and hotel/club systems; InfluxDB and Grafana for alerting. Looking for an Automation, Systems, or Infrastructure Engineer role where that work is the job.
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
-                        <a href="#projects" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-400 text-dark-bg px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-brand-500/30">
-                            <i class="ph ph-code text-xl"></i> View Projects
+                        <a href="#work" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-400 text-dark-bg px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-brand-500/30">
+                            <i class="ph ph-hard-drives text-xl"></i> View Work
                         </a>
                         <a href="https://github.com/Smb7" target="_blank" class="inline-flex items-center gap-2 glass-card hover:border-brand-400/50 text-white px-6 py-3 rounded-lg font-medium transition">
                             <i class="ph ph-github-logo text-xl"></i> GitHub
@@ -166,98 +166,69 @@
                         <a href="https://www.linkedin.com/in/shane-brennan-washington/" target="_blank" class="inline-flex items-center gap-2 glass-card hover:border-brand-400/50 text-white px-6 py-3 rounded-lg font-medium transition">
                             <i class="ph ph-linkedin-logo text-xl"></i> LinkedIn
                         </a>
-                        <a href="mailto:Shane.m.brenn@gmail.com" class="inline-flex items-center gap-2 glass-card hover:border-brand-400/50 text-white px-6 py-3 rounded-lg font-medium transition">
-                            <i class="ph ph-envelope text-xl"></i> Email
-                        </a>
                     </div>
                 </div>
             </section>
 
-            <!-- Projects Section -->
-            <section id="projects" class="mb-24">
+            <!-- Selected Work -->
+            <section id="work" class="mb-24">
                 <div class="flex items-center gap-4 mb-10">
-                    <h2 class="text-3xl font-bold">Featured Projects</h2>
+                    <h2 class="text-3xl font-bold">Selected Work</h2>
                     <div class="h-px bg-dark-border flex-1"></div>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                    <!-- Project 1: SufferTracker -->
                     <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
                         <div class="p-6 flex-1 flex flex-col">
                             <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg w-fit mb-4">
-                                <i class="ph ph-briefcase text-2xl"></i>
+                                <i class="ph ph-chart-line-up text-2xl"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">
-                                <a href="https://suffertracker.net" target="_blank" rel="noopener noreferrer" class="hover:text-brand-400 transition">SufferTracker</a>
-                            </h3>
+                            <h3 class="text-xl font-bold mb-2">Infrastructure Monitoring</h3>
                             <p class="text-slate-400 text-sm mb-4 flex-1">
-                                Full-stack job tracker with a .NET 8 API, Angular frontend, and PostgreSQL. JWT auth, TOTP MFA, admin controls, OCR screenshot parsing, and URL scraping with SSRF guards. Deployed with Docker Compose, Caddy TLS, and GitHub Actions CI/CD including xUnit coverage gates and SquidGate PR scans.
+                                Own the Telegraf, InfluxDB, and Grafana stack with Outlook and Teams as the page path. Sonos REST integration showed when music stopped and cut repeat audio complaints.
                             </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">.NET 8</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Angular</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">PostgreSQL</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Docker</span>
-                            </div>
                             <div class="flex flex-wrap gap-2 mt-auto">
-                                <a href="https://suffertracker.net" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-brand-500 hover:bg-brand-400 text-dark-bg px-3 py-2 rounded-lg text-sm font-medium transition">
-                                    <i class="ph ph-arrow-square-out"></i> Live site
-                                </a>
-                                <a href="https://github.com/Smb7/SufferTracker" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 border border-dark-border hover:border-brand-400 text-white px-3 py-2 rounded-lg text-sm font-medium transition">
-                                    <i class="ph ph-github-logo"></i> GitHub
-                                </a>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Telegraf</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">InfluxDB</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Grafana</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">REST APIs</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: Productivity Tracker -->
                     <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
                         <div class="p-6 flex-1 flex flex-col">
                             <div class="p-3 bg-teal-500/20 text-teal-400 rounded-lg w-fit mb-4">
-                                <i class="ph ph-timer text-2xl"></i>
+                                <i class="ph ph-network text-2xl"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">
-                                <a href="https://github.com/Smb7/Productivity-Tracker" target="_blank" rel="noopener noreferrer" class="hover:text-brand-400 transition">Productivity Tracker</a>
-                            </h3>
+                            <h3 class="text-xl font-bold mb-2">Network Automation</h3>
                             <p class="text-slate-400 text-sm mb-4 flex-1">
-                                Angular + Java 17 Spring Boot app for live activity timers, session logging, and a daily category dashboard. Fully containerized with Docker Compose; GitHub Actions builds the Maven backend image and Angular frontend.
+                                Python CLI against Juniper and Palo Alto for MAC lookup, port config, and device health — replacing a weekly manual log and temperature check. Filled and profiled two 48-port Juniper switches to security spec.
                             </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Angular</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Spring Boot</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Docker</span>
-                            </div>
                             <div class="flex flex-wrap gap-2 mt-auto">
-                                <a href="https://github.com/Smb7/Productivity-Tracker" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-brand-500 hover:bg-brand-400 text-dark-bg px-3 py-2 rounded-lg text-sm font-medium transition">
-                                    <i class="ph ph-github-logo"></i> View on GitHub
-                                </a>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Python</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Juniper</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Palo Alto</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">VLANs</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 3: Player Stats Aggregator -->
                     <div class="glass-card rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col h-full">
                         <div class="p-6 flex-1 flex flex-col">
                             <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg w-fit mb-4">
-                                <i class="ph ph-python-logo text-2xl"></i>
+                                <i class="ph ph-user-circle-gear text-2xl"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">
-                                <a href="https://github.com/Smb7/Player-Stats-Aggregator" target="_blank" rel="noopener noreferrer" class="hover:text-brand-400 transition">Player Stats Aggregator</a>
-                            </h3>
+                            <h3 class="text-xl font-bold mb-2">Identity &amp; Ops Automation</h3>
                             <p class="text-slate-400 text-sm mb-4 flex-1">
-                                FastAPI service that concurrently aggregates Steam, Xbox, and Riot-style profiles with asyncio.gather, returning partial data if a source fails. Dockerized with pytest CI and a separate Docker-verify workflow.
+                                Automated print-server queue control, AD-to-Entra sync, password reset, shared-mailbox creation, and computer-object add, rename, and decommission. Boot-check script restarts a failed Opera service that left hotel room status stale.
                             </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">FastAPI</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Python</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Asyncio</span>
-                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Docker</span>
-                            </div>
                             <div class="flex flex-wrap gap-2 mt-auto">
-                                <a href="https://github.com/Smb7/Player-Stats-Aggregator" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-brand-500 hover:bg-brand-400 text-dark-bg px-3 py-2 rounded-lg text-sm font-medium transition">
-                                    <i class="ph ph-github-logo"></i> View on GitHub
-                                </a>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">PowerShell</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Active Directory</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Entra ID</span>
+                                <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Microsoft 365</span>
                             </div>
                         </div>
                     </div>
@@ -273,28 +244,20 @@
                         <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-wrench text-brand-400"></i> Technical Skills</h3>
                         <div class="glass-card p-5 rounded-xl space-y-4">
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Languages</h4>
-                                <p class="text-slate-400 text-sm">C#, Python, Java, TypeScript, JavaScript, SQL, PowerShell, Bash, HTML5/CSS3</p>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Automation</h4>
+                                <p class="text-slate-400 text-sm">PowerShell, Python, REST APIs, GitHub Actions, scheduled remediation scripts</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Backend &amp; Web Frameworks</h4>
-                                <p class="text-slate-400 text-sm">.NET (ASP.NET Core, MVC), FastAPI, Flask, Django, Spring Boot, Node.js (Express), Entity Framework, JWT, TOTP, OCR</p>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Identity / Cloud</h4>
+                                <p class="text-slate-400 text-sm">Active Directory, Entra ID, AD Connect, Microsoft 365, Exchange, Intune</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Frontend</h4>
-                                <p class="text-slate-400 text-sm">Angular, React, RESTful APIs, JSON endpoints</p>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Network</h4>
+                                <p class="text-slate-400 text-sm">Juniper, Palo Alto, UniFi, Meraki, VLANs, DHCP, DNS, TCP/IP, port profiles</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Databases</h4>
-                                <p class="text-slate-400 text-sm">SQL Server, PostgreSQL, MySQL, InfluxDB, Redis</p>
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">DevOps &amp; Infrastructure</h4>
-                                <p class="text-slate-400 text-sm">Docker, Docker Compose, GitHub Actions (CI/CD), Git, Grafana, Azure, Linux, Palo Alto, Juniper, Caddy, Maven</p>
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Methodologies</h4>
-                                <p class="text-slate-400 text-sm">Domain-Driven Design (DDD), Test-Driven Development (TDD, xUnit, pytest), RBAC, ITIL</p>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Platforms</h4>
+                                <p class="text-slate-400 text-sm">Windows Server, Linux, Docker, Telegraf, InfluxDB, Grafana, Splunk, VoIP, ServiceNow</p>
                             </div>
                         </div>
                     </div>
@@ -303,13 +266,13 @@
                         <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-graduation-cap text-brand-400"></i> Education</h3>
                         <div class="glass-card p-5 rounded-xl space-y-4">
                             <div>
-                                <h4 class="font-bold text-white">M.S. in Software Engineering (Domain-Driven Design)</h4>
+                                <h4 class="font-bold text-white">M.S. Software Engineering</h4>
                                 <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
                                 <p class="text-brand-400 text-xs font-mono">Expected 2027</p>
                             </div>
                             <div class="border-t border-dark-border/50"></div>
                             <div>
-                                <h4 class="font-bold text-white">B.S. in Software Engineering</h4>
+                                <h4 class="font-bold text-white">B.S. Software Engineering</h4>
                                 <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
                                 <p class="text-brand-400 text-xs font-mono">2026</p>
                             </div>
@@ -320,27 +283,21 @@
                         <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-seal-check text-brand-400"></i> Certifications</h3>
                         <div class="glass-card p-5 rounded-xl space-y-4">
                             <div>
-                                <h4 class="font-bold text-white">Backend Development</h4>
-                                <p class="text-slate-400 text-sm mb-1">Nucamp</p>
-                                <p class="text-brand-400 text-xs font-mono">2022</p>
+                                <h4 class="font-bold text-white">ITIL Foundation in IT Service Management</h4>
+                                <p class="text-slate-400 text-sm mb-1">PeopleCert</p>
+                                <p class="text-brand-400 text-xs font-mono">Dec 2025 – Dec 2028</p>
                             </div>
                             <div class="border-t border-dark-border/50"></div>
                             <div>
                                 <h4 class="font-bold text-white">Front-End Developer</h4>
-                                <p class="text-slate-400 text-sm mb-1">WGU</p>
-                                <p class="text-brand-400 text-xs font-mono">2025</p>
+                                <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
+                                <p class="text-brand-400 text-xs font-mono">December 2025</p>
                             </div>
                             <div class="border-t border-dark-border/50"></div>
                             <div>
-                                <h4 class="font-bold text-white">ITIL Foundation</h4>
-                                <p class="text-slate-400 text-sm mb-1">PeopleCert</p>
-                                <p class="text-brand-400 text-xs font-mono">2025</p>
-                            </div>
-                            <div class="border-t border-dark-border/50"></div>
-                            <div>
-                                <h4 class="font-bold text-white">Excellence Award</h4>
-                                <p class="text-slate-400 text-sm mb-1">WGU</p>
-                                <p class="text-brand-400 text-xs font-mono">2025</p>
+                                <h4 class="font-bold text-white">Backend Development</h4>
+                                <p class="text-slate-400 text-sm mb-1">Nucamp Coding Bootcamp</p>
+                                <p class="text-brand-400 text-xs font-mono">September 2022</p>
                             </div>
                         </div>
                     </div>
@@ -352,95 +309,76 @@
                     
                     <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-dark-border before:to-transparent">
                         
-                        <!-- Job 1: SquidSec -->
+                        <!-- Job 1: Bellevue Club -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 group-[.is-active]:text-brand-400 group-[.is-active]:border-brand-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                                <i class="ph ph-shield-check"></i>
+                                <i class="ph ph-hard-drives"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl border border-brand-500/30">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">Software Engineer</h4>
-                                    <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2 py-1 rounded">SquidSec</span>
-                                </div>
-                                <p class="text-xs text-slate-400 mb-2 font-mono">June 2026 – Present</p>
-                                <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Develop open-source ticketing systems and cybersecurity utilities using C#, Python, React, and Angular.</li>
-                                    <li>Build CI/CD pipelines using GitHub Actions, Docker, and integrated security scans (SquidGate) across frontend and backend codebases.</li>
-                                    <li>Apply OpenCode LLM tooling to speed up internal feature development and testing cycles.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Job 2: Bellevue Club -->
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                                <i class="ph ph-code"></i>
-                            </div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
-                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">Software Engineer</h4>
+                                    <h4 class="font-bold text-white text-lg">IT Technical Specialist</h4>
                                     <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2 py-1 rounded">Bellevue Club</span>
                                 </div>
-                                <p class="text-xs text-slate-400 mb-2 font-mono">May 2024 – Present</p>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">May 2024 – Present · Bellevue, WA</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Engineered a guest book web application with C# ASP.NET MVC and SQL Server, driving a 10–15% increase in guest fee revenue and 30% higher billing accuracy.</li>
-                                    <li>Developed Python REST APIs and Grafana/InfluxDB dashboards to monitor Sonos audio hardware, increasing uptime by 10–20% and reducing related tickets by up to 40%.</li>
-                                    <li>Built a Python CLI tool for network engineers to query Palo Alto firewalls and Juniper switches by MAC address, reducing network triage time by 15–20%.</li>
-                                    <li>Created a C# WinForms diagnostic utility deployed to POS terminals to evaluate system, network, and hardware health, accelerating resolution times by 10%.</li>
-                                    <li>Automated account management, print server queues, and incident alerting using PowerShell and Bash, reducing support ticket turnaround by 30%.</li>
+                                    <li>Led cutover of 170+ phones and 10 emergency phones from analog to VoIP. Built the Teams alert that notifies internal first responders of a 911 call on the property.</li>
+                                    <li>Filled and profiled two 48-port Juniper switches for an accounting-office remodel to the security spec. Python CLI against Juniper and Palo Alto for MAC lookup, port config, and device health, replacing a weekly manual log and temperature check.</li>
+                                    <li>Own infrastructure monitoring: Telegraf, InfluxDB, Grafana, with Outlook and Teams as the page path. Sonos REST integration into that stack showed when music stopped and cut repeat audio complaints.</li>
+                                    <li>Automated print-server queue control, AD-to-Entra sync, password reset, shared-mailbox creation, and computer-object add, rename, and decommission. Boot-check script restarts a failed Opera service that had been leaving hotel room status stale.</li>
+                                    <li>Rewrote the member guest book from a Power App into C# MVC after suspended and non-billing members were submitting guests and creating billing errors. Added validation, multi-guest entry, and a live staff registration view.</li>
+                                    <li>24/7 on-call for network, phone, Northstar, Opera, and hotel-door incidents; vendor contact through resolution. Fixed a Mac VPN outage caused by SAML enforced over username/password inputs by moving it to passwordless sign-in. Locked down Entra guest access for external OneDrive sharing.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Job 3: Starbucks -->
+                        <!-- Job 2: Starbucks -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-coffee"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">IT Service Analyst</h4>
+                                    <h4 class="font-bold text-white text-lg">IT Service Desk Analyst</h4>
                                     <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">Starbucks</span>
                                 </div>
-                                <p class="text-xs text-slate-400 mb-2 font-mono">December 2023 – May 2024</p>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">December 2023 – May 2024 · Seattle, WA</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Authored Python automation scripts for documentation workflows, reducing ticket logging overhead by 10%.</li>
-                                    <li>Provided Tier 1–2 network and POS systems troubleshooting for 10,000+ retail locations using ServiceNow, Meraki, Splunk, and JAMF, maintaining an 80% first-contact resolution rate.</li>
+                                    <li>ServiceNow and call queue, 150–200 tickets a week, 70% first-call resolution, 90% satisfaction. Tier 1/2 for Simphony POS, Meraki, payment readers, Windows, Mac, JAMF, Intune, and Entra ID, including phishing triage.</li>
+                                    <li>Used Meraki for port status, MAC/IP location, VLAN checks, and remote port cycles. Diagnosed DHCP exhaustion and IP conflicts, judged blast radius, and escalated outages filed as low-priority tickets.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Job 4: Boeing -->
+                        <!-- Job 3: Boeing -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-buildings"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">IT Support II – Site Lead</h4>
+                                    <h4 class="font-bold text-white text-lg">IT Support — Renton Site Lead</h4>
                                     <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">Boeing</span>
                                  </div>
-                                <p class="text-xs text-slate-400 mb-2 font-mono">June 2023 – December 2023</p>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">June 2023 – December 2023 · Renton, WA</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Led a 10-person team overseeing campus staging, hardware provisioning, and remote VPN deployment workflows.</li>
-                                    <li>Wrote a Python script utilizing location-based tagging to query MAC addresses, cutting manual staging time per batch.</li>
+                                    <li>Site lead for the Renton campus support center. Led the remote refresh team, wrote VPN and escalation docs, imaged about 150 laptops a week and wiped about 100.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Job 5: AT&T -->
+                        <!-- Job 4: AT&T -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-phone"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">IT Support Specialist</h4>
+                                    <h4 class="font-bold text-white text-lg">Tier 1 Technical Support</h4>
                                     <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">AT&amp;T</span>
                                 </div>
                                 <p class="text-xs text-slate-400 mb-2 font-mono">June 2022 – June 2023</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Resolved mobile OS, network connectivity (DNS, VPN, IP), and hardware issues, maintaining a 90% customer satisfaction score.</li>
+                                    <li>iOS and Android phone support (Wi-Fi, data, transfers, hardware). 90% customer satisfaction for three straight months.</li>
                                 </ul>
                             </div>
                         </div>
@@ -465,10 +403,6 @@
                 <a href="https://www.linkedin.com/in/shane-brennan-washington/" class="text-slate-500 hover:text-white transition">
                     <span class="sr-only">LinkedIn</span>
                     <i class="ph ph-linkedin-logo text-xl"></i>
-                </a>
-                <a href="mailto:Shane.m.brenn@gmail.com" class="text-slate-500 hover:text-white transition">
-                    <span class="sr-only">Email</span>
-                    <i class="ph ph-envelope text-xl"></i>
                 </a>
             </div>
         </div>
