@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shane Brennan | Automation · Systems · Infrastructure Engineer</title>
+    <title>Shane Brennan | Platform Engineer · Site Reliability · DevOps</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Phosphor Icons -->
@@ -151,10 +151,10 @@
                         Shane Brennan
                     </h1>
                     <h2 class="text-2xl lg:text-3xl text-teal-400 font-medium">
-                        Automation Engineer · Systems Engineer · Infrastructure Engineer
+                        Platform Engineer · Site Reliability · DevOps
                     </h2>
                     <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
-                        Infrastructure specialist who automates network, identity, voice, and monitoring work instead of ticket-driving it. Python and PowerShell tooling against Juniper, Palo Alto, Active Directory, and hotel/club systems; InfluxDB and Grafana for alerting. Looking for an Automation, Systems, or Infrastructure Engineer role where that work is the job.
+                        Systems engineer who builds the release paths, identity automation, and observability that keep production services up. Hands-on with PowerShell and Python, GitHub Actions, Docker, Windows Server and IIS, Active Directory and Entra ID, and a Telegraf/Influx/Grafana stack. On-call owner for network, VoIP, and application incidents at a club and hotel property. 
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
                         <a href="#work" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-400 text-dark-bg px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-brand-500/30">
@@ -186,7 +186,7 @@
                             </div>
                             <h3 class="text-xl font-bold mb-2">Infrastructure Monitoring</h3>
                             <p class="text-slate-400 text-sm mb-4 flex-1">
-                                Own the Telegraf, InfluxDB, and Grafana stack with Outlook and Teams as the page path. Sonos REST integration showed when music stopped and cut repeat audio complaints.
+                                Audited the Telegraf/Influx/Grafana stack and defined a git-backed observability model: inventory cleanup, real paging paths, and config-as-code. Own Teams and Outlook notifications. Sonos REST API into Influx and Grafana so volume and playback state were visible before member complaints.
                             </p>
                             <div class="flex flex-wrap gap-2 mt-auto">
                                 <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Telegraf</span>
@@ -204,7 +204,7 @@
                             </div>
                             <h3 class="text-xl font-bold mb-2">Network Automation</h3>
                             <p class="text-slate-400 text-sm mb-4 flex-1">
-                                Python CLI against Juniper and Palo Alto for MAC lookup, port config, and device health — replacing a weekly manual log and temperature check. Filled and profiled two 48-port Juniper switches to security spec.
+                                Python CLI for Juniper and Palo Alto covering MAC, port, status, temperature, errors, and logs — replacing weekly manual console checks. Led a 48-port Juniper cutover with port profiles and VLANs to security spec, and automated switch alarm and status polling.
                             </p>
                             <div class="flex flex-wrap gap-2 mt-auto">
                                 <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">Python</span>
@@ -222,7 +222,7 @@
                             </div>
                             <h3 class="text-xl font-bold mb-2">Identity &amp; Ops Automation</h3>
                             <p class="text-slate-400 text-sm mb-4 flex-1">
-                                Automated print-server queue control, AD-to-Entra sync, password reset, shared-mailbox creation, and computer-object add, rename, and decommission. Boot-check script restarts a failed Opera service that left hotel room status stale.
+                                AD and Entra automation: HR-termination versus AD cross-check, on-demand AAD Connect delta sync, password reset, computer join and decommission, and shared-mailbox provisioning. Opera IFC watchdog restarts hotel phone and room-status service after boot. Automated print-server queue operations.
                             </p>
                             <div class="flex flex-wrap gap-2 mt-auto">
                                 <span class="px-2 py-1 bg-dark-bg border border-dark-border rounded text-xs font-mono text-slate-300">PowerShell</span>
@@ -244,20 +244,24 @@
                         <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-wrench text-brand-400"></i> Technical Skills</h3>
                         <div class="glass-card p-5 rounded-xl space-y-4">
                             <div>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Delivery</h4>
+                                <p class="text-slate-400 text-sm">GitHub Actions, Docker, .NET publish pipelines, IIS AppPool deploy and rollback, WinRM, Caddy, config-as-code</p>
+                            </div>
+                            <div>
                                 <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Automation</h4>
-                                <p class="text-slate-400 text-sm">PowerShell, Python, REST APIs, GitHub Actions, scheduled remediation scripts</p>
+                                <p class="text-slate-400 text-sm">PowerShell, Python, idempotent Windows Server provisioning, AD and Entra scripting, service watchdogs, print-server ops</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Identity / Cloud</h4>
-                                <p class="text-slate-400 text-sm">Active Directory, Entra ID, AD Connect, Microsoft 365, Exchange, Intune</p>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">SRE</h4>
+                                <p class="text-slate-400 text-sm">Telegraf, InfluxDB, Grafana, Splunk, SLIs/SLOs, on-call, incident RCA, Teams paging and webhooks</p>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Network</h4>
-                                <p class="text-slate-400 text-sm">Juniper, Palo Alto, UniFi, Meraki, VLANs, DHCP, DNS, TCP/IP, port profiles</p>
+                                <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Identity &amp; Security</h4>
+                                <p class="text-slate-400 text-sm">Active Directory, Entra ID, AAD Connect, MFA/TOTP, Argon2id, Defender triage, SAML, rate limiting</p>
                             </div>
                             <div>
                                 <h4 class="text-sm font-semibold text-slate-300 mb-2 uppercase tracking-wider">Platforms</h4>
-                                <p class="text-slate-400 text-sm">Windows Server, Linux, Docker, Telegraf, InfluxDB, Grafana, Splunk, VoIP, ServiceNow</p>
+                                <p class="text-slate-400 text-sm">Windows Server 2012–22, IIS, .NET 5–9, Azure, Palo Alto, Juniper, UniFi, Meraki, Linux</p>
                             </div>
                         </div>
                     </div>
@@ -267,14 +271,14 @@
                         <div class="glass-card p-5 rounded-xl space-y-4">
                             <div>
                                 <h4 class="font-bold text-white">M.S. Software Engineering</h4>
-                                <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
+                                <p class="text-slate-400 text-sm mb-1">Western Governors University · DevOps specialization</p>
                                 <p class="text-brand-400 text-xs font-mono">Expected 2027</p>
                             </div>
                             <div class="border-t border-dark-border/50"></div>
                             <div>
                                 <h4 class="font-bold text-white">B.S. Software Engineering</h4>
                                 <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
-                                <p class="text-brand-400 text-xs font-mono">2026</p>
+                                <p class="text-brand-400 text-xs font-mono">Expected 2027</p>
                             </div>
                         </div>
                     </div>
@@ -283,21 +287,15 @@
                         <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-seal-check text-brand-400"></i> Certifications</h3>
                         <div class="glass-card p-5 rounded-xl space-y-4">
                             <div>
-                                <h4 class="font-bold text-white">ITIL Foundation in IT Service Management</h4>
-                                <p class="text-slate-400 text-sm mb-1">PeopleCert</p>
-                                <p class="text-brand-400 text-xs font-mono">Dec 2025 – Dec 2028</p>
-                            </div>
-                            <div class="border-t border-dark-border/50"></div>
-                            <div>
-                                <h4 class="font-bold text-white">Front-End Developer</h4>
+                                <h4 class="font-bold text-white">Front-End Development Certificate</h4>
                                 <p class="text-slate-400 text-sm mb-1">Western Governors University</p>
                                 <p class="text-brand-400 text-xs font-mono">December 2025</p>
                             </div>
                             <div class="border-t border-dark-border/50"></div>
                             <div>
-                                <h4 class="font-bold text-white">Backend Development</h4>
-                                <p class="text-slate-400 text-sm mb-1">Nucamp Coding Bootcamp</p>
-                                <p class="text-brand-400 text-xs font-mono">September 2022</p>
+                                <h4 class="font-bold text-white">Backend Software Development Bootcamp</h4>
+                                <p class="text-slate-400 text-sm mb-1">Nucamp</p>
+                                <p class="text-brand-400 text-xs font-mono">2022</p>
                             </div>
                         </div>
                     </div>
@@ -309,29 +307,54 @@
                     
                     <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-dark-border before:to-transparent">
                         
-                        <!-- Job 1: Bellevue Club -->
+                        <!-- Job 1: SquidSec -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 group-[.is-active]:text-brand-400 group-[.is-active]:border-brand-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                <i class="ph ph-shield-check"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl border border-brand-500/30">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                    <h4 class="font-bold text-white text-lg">Software Engineer</h4>
+                                    <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2 py-1 rounded">SquidSec</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mb-2 font-mono">June 2026 – Present · Concurrent with Bellevue Club</p>
+                                <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                                    <li>Architected a locally hosted, multi-node Active Directory range with intentional misconfigurations used to demonstrate Kerberoasting, lateral movement, and privilege escalation.</li>
+                                    <li>Wrote idempotent PowerShell provisioning for isolated Windows Server 2022 virtual networks so lab infrastructure rebuilds to a known state instead of a hand-built one.</li>
+                                    <li>Built GitHub Actions CI that lints, runs API and frontend unit tests, and compiles production builds on every push. Containerized builds with Docker and wired SquidGate security scans across frontend and backend.</li>
+                                    <li>Terminated TLS and routed edge traffic with Caddy; enforced admin TOTP, Argon2id password hashing, and endpoint rate limiting.</li>
+                                    <li>Develop open-source ticketing and security utilities in Python, React, and Angular. Use OpenCode LLM tooling to shorten internal features and test cycles.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Job 2: Bellevue Club -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 group-[.is-active]:text-brand-400 group-[.is-active]:border-brand-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-hard-drives"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl border border-brand-500/30">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">IT Technical Specialist</h4>
+                                    <h4 class="font-bold text-white text-lg">Systems Engineer</h4>
                                     <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2 py-1 rounded">Bellevue Club</span>
                                 </div>
                                 <p class="text-xs text-slate-400 mb-2 font-mono">May 2024 – Present · Bellevue, WA</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Led cutover of 170+ phones and 10 emergency phones from analog to VoIP. Built the Teams alert that notifies internal first responders of a 911 call on the property.</li>
-                                    <li>Filled and profiled two 48-port Juniper switches for an accounting-office remodel to the security spec. Python CLI against Juniper and Palo Alto for MAC lookup, port config, and device health, replacing a weekly manual log and temperature check.</li>
-                                    <li>Own infrastructure monitoring: Telegraf, InfluxDB, Grafana, with Outlook and Teams as the page path. Sonos REST integration into that stack showed when music stopped and cut repeat audio complaints.</li>
-                                    <li>Automated print-server queue control, AD-to-Entra sync, password reset, shared-mailbox creation, and computer-object add, rename, and decommission. Boot-check script restarts a failed Opera service that had been leaving hotel room status stale.</li>
-                                    <li>Rewrote the member guest book from a Power App into C# MVC after suspended and non-billing members were submitting guests and creating billing errors. Added validation, multi-guest entry, and a live staff registration view.</li>
-                                    <li>24/7 on-call for network, phone, Northstar, Opera, and hotel-door incidents; vendor contact through resolution. Fixed a Mac VPN outage caused by SAML enforced over username/password inputs by moving it to passwordless sign-in. Locked down Entra guest access for external OneDrive sharing.</li>
+                                    <li>Automated .NET 9 IIS releases with a PowerShell pipeline: dotnet publish, production config injection, WinRM file copy, AppPool stop/start, and AppPool restart on failure. The Digital Guest Book deploy uses the same path with recycle and rollback.</li>
+                                    <li>Audited the Telegraf/Influx/Grafana stack and defined a git-backed observability model: inventory cleanup, real paging paths, and config-as-code. Own the stack plus Teams and Outlook notifications for infrastructure health.</li>
+                                    <li>Primary 24/7 on-call for network, VoIP, Northstar, Opera, and hotel access. Managed SLIs and SLOs, ran root-cause analysis through resolution, and drove vendor incidents until service was restored.</li>
+                                    <li>Built a 911 VoIP-to-Teams paging path so on-site first responders get an alert instead of a helpdesk ticket. Also wired Telegraf/Influx/Grafana alerts into Teams via webhooks.</li>
+                                    <li>Cut identity toil with AD and Entra automation: HR-termination versus AD cross-check, on-demand AAD Connect delta sync, account-status checks, password reset, computer join and decommission, and shared-mailbox provisioning.</li>
+                                    <li>Configured an Azure gateway so cloud services could reach the on-prem server, and locked external OneDrive collaboration to strict guest-access controls. Handle Entra user management, MFA resets, and license provisioning.</li>
+                                    <li>Replaced weekly manual network checks with a Python CLI for Juniper and Palo Alto covering MAC, port, status, temperature, errors, and logs. Led a 48-port Juniper cutover with port profiles and VLANs to security spec.</li>
+                                    <li>Fixed a business-critical Palo Alto SAML failure where SAML was enforced but the inputs were still username and password, blocking MacTech guest VPN. Also own DHCP reservations on the firewall.</li>
+                                    <li>Shipped a Sonos REST API into Influx and Grafana so volume and playback state were visible before member complaints. Wrote an Opera IFC service watchdog that restarts the hotel phone and room-status service when it fails after boot.</li>
+                                    <li>Rewrote Digital Guest Book from Power Apps to C# MVC with member validation, multi-guest support, and a realtime staff registration view. Automated print-server queue operations and Defender phishing triage.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Job 2: Starbucks -->
+                        <!-- Job 3: Starbucks -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-coffee"></i>
@@ -343,42 +366,46 @@
                                 </div>
                                 <p class="text-xs text-slate-400 mb-2 font-mono">December 2023 – May 2024 · Seattle, WA</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>ServiceNow and call queue, 150–200 tickets a week, 70% first-call resolution, 90% satisfaction. Tier 1/2 for Simphony POS, Meraki, payment readers, Windows, Mac, JAMF, Intune, and Entra ID, including phishing triage.</li>
-                                    <li>Used Meraki for port status, MAC/IP location, VLAN checks, and remote port cycles. Diagnosed DHCP exhaustion and IP conflicts, judged blast radius, and escalated outages filed as low-priority tickets.</li>
+                                    <li>Closed 150–200 ServiceNow tickets a week across Simphony POS, Cisco switches, payment readers, receipt printers, IoT, iOS, Mac, and Windows, with 70% first-call resolution and a 90% partner satisfaction score.</li>
+                                    <li>Caught site-wide failures hiding in low-priority tickets. Used Splunk and Grafana for root cause, and escalated once blast radius was clear.</li>
+                                    <li>Used Meraki to check port status, locate devices by MAC or IP, verify switch and AP health, remotely power-cycle ports, and adjust port profiles and VLANs. Diagnosed DHCP scope exhaustion, IP conflicts, and WAN uplink issues.</li>
+                                    <li>POS and payments: restarted frozen Simphony clients, used EMC to trace routing failures, verified reader reachability, and completed logistics before NCR RMAs.</li>
+                                    <li>Identity and endpoint: account unlocks and password resets in SAP, AD, and JAMF; Entra MFA troubleshooting; BitLocker recovery; Intune-related Windows issues; phishing-email review and malicious-domain blocks.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Job 3: Boeing -->
+                        <!-- Job 4: Boeing -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-buildings"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">IT Support — Renton Site Lead</h4>
+                                    <h4 class="font-bold text-white text-lg">Desktop Support Technician</h4>
                                     <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">Boeing</span>
                                  </div>
                                 <p class="text-xs text-slate-400 mb-2 font-mono">June 2023 – December 2023 · Renton, WA</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>Site lead for the Renton campus support center. Led the remote refresh team, wrote VPN and escalation docs, imaged about 150 laptops a week and wiped about 100.</li>
+                                    <li>Site lead for the Renton campus refresh. Tier 1 and 2 break-fix at support centers and in office buildings, plus staging and inventory of imaged and wiped machines.</li>
+                                    <li>Imaged about 150 laptops and wiped about 100 a week. Led the remote refresh team and wrote VPN and escalation runbooks so the rest of the team could repeat the path.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Job 4: AT&T -->
+                        <!-- Job 5: AT&T -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-dark-border bg-dark-surface text-slate-500 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                 <i class="ph ph-phone"></i>
                             </div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-5 rounded-xl">
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <h4 class="font-bold text-white text-lg">Tier 1 Technical Support</h4>
+                                    <h4 class="font-bold text-white text-lg">Technical Support Representative</h4>
                                     <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2 py-1 rounded border border-dark-border">AT&amp;T</span>
                                 </div>
                                 <p class="text-xs text-slate-400 mb-2 font-mono">June 2022 – June 2023</p>
                                 <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
-                                    <li>iOS and Android phone support (Wi-Fi, data, transfers, hardware). 90% customer satisfaction for three straight months.</li>
+                                    <li>Tier 1 support for iOS and Android, Wi-Fi, data, device transfer, and hardware diagnosis. Held a 90% customer satisfaction score for three consecutive months.</li>
                                 </ul>
                             </div>
                         </div>
