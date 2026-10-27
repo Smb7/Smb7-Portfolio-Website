@@ -9,11 +9,11 @@ A responsive, dark-themed personal portfolio website built to showcase my profes
 
 *   **Responsive Design:** Fully responsive layout that adapts seamlessly to desktop, tablet, and mobile devices.
 *   **Modern UI/UX:** Built with a custom dark theme using Tailwind CSS, featuring glassmorphism card effects, smooth scrolling, and custom scrollbars.
-*   **Professional Timeline:** Detailed work history outlining roles and responsibilities at companies like SquidSec, Boeing, and Starbucks.
-*   **Project Showcase:** Dedicated sections for full-stack featured projects, including:
-    *   **SufferTracker:** A production job tracker (.NET 8, Angular, PostgreSQL, Docker).
-    *   **Productivity Tracker:** A containerized daily activity logger (Angular, Spring Boot, Docker).
-    *   **Player Stats Aggregator:** An asynchronous backend service (FastAPI, Python).
+*   **Professional Timeline:** Work history from the resume, including Bellevue Club, Starbucks, Boeing, and AT&amp;T.
+*   **Project Showcase:** Security-focused projects from the resume:
+    *   **SquidRange:** Active Directory security lab.
+    *   **SquidGate:** LLM-powered PR security scanner.
+    *   **SquidSupport:** Multi-tenant support platform.
 
 ## 🛠️ Built With
 
