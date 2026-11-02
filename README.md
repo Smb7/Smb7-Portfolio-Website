@@ -9,11 +9,11 @@ A responsive, dark-themed personal portfolio website built to showcase my profes
 
 *   **Responsive Design:** Fully responsive layout that adapts seamlessly to desktop, tablet, and mobile devices.
 *   **Modern UI/UX:** Built with a custom dark theme using Tailwind CSS, featuring glassmorphism card effects, smooth scrolling, and custom scrollbars.
-*   **Professional Timeline:** Work history from the resume, including Bellevue Club, Starbucks, Boeing, and AT&amp;T.
-*   **Project Showcase:** Security-focused projects from the resume:
-    *   **SquidRange:** Active Directory security lab.
-    *   **SquidGate:** LLM-powered PR security scanner.
-    *   **SquidSupport:** Multi-tenant support platform.
+*   **Professional Timeline:** Work history from the resume, including Bellevue Club, SquidSec, Starbucks, Boeing, and AT&amp;T.
+*   **Selected Work:** Resume-backed highlights:
+    *   **SquidSupport:** Multi-tenant enterprise ticketing and support platform.
+    *   **AD Lifecycle Automation:** PowerShell scripts that reconcile HR data against Active Directory.
+    *   **VoIP &amp; Network Provisioning:** Juniper switch provisioning and a 170+ handset VoIP migration.
 
 ## 🛠️ Built With
 
